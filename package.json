@@ -1,6 +1,6 @@
 {
   "name": "ergosphere-core",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Worm holes between offices",
   "author": "Ergosign GmbH (info@ergosign.de)",
   "repository": "https://github.com/Ergosign/ergosphere-core.git",
@@ -24,7 +24,7 @@
   "engines": {
     "node": "*"
   },
-  "files":[
+  "files": [
     "client-assets",
     "assemble-files",
     "lib",
@@ -48,8 +48,8 @@
     "request": "2.57.0",
     "time-grunt": "1.0.0"
   },
-  "scripts":{
-    "prepare":"grunt release",
-    "start":"grunt run"
+  "scripts": {
+    "prepare": "grunt release",
+    "start": "grunt run"
   }
 }
