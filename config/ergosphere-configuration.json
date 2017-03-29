@@ -15,5 +15,11 @@
     "consumer_secret": "",
     "access_token_key": "",
     "access_token_secret": ""
+  },
+  "ssl_config":{
+    "use_ssl":false,
+    "key_path":"",
+    "cert_path":"",
+    "ca_path":""
   }
 }

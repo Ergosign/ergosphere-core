@@ -1,57 +1,45 @@
-# Ergosign ergosphere-new Style Guide & Examples
+# Ergosign Ergosphere
 
-The source code for this project uses templates and SASS files to output the HTML, JavaScript and CSS of the required components.
+This project was created as part of a Hack-a-thon at Ergosign after being given a challenge.
 
-The outputs of the project are built in the www folder using Grunt.
+The challenge was to find a way to better connect the people in the 5 Ergosign offices in Germnay and Switzerland.
 
-## Building the www folder
+It was decided to create a panel to be hung on the wall of each kitchen in each location (total 7 kitchens).
 
-To build the www folder for this project we require that Node.js is installed.
+The panel would be interactive, and show updates on each location, with weather, latest tweets, most listened to 
+music (via last.fm) and other such data.
 
-To install Node.js - visit the [Node JS Website](http://nodejs.org).
+You can see a video about the process and the results here:
 
-Once node is installed it should be possible from the main directory (where the _Gruntfile.js is) to call:
+https://vimeo.com/158902080
 
-    npm install
-    
-This will use the package.json file to install all the required components for Grunt to work.
+## Hardware
 
-To install grunt from the command line:
+Currently we use a Windows 10 client, with touch panel as the terminal in each kitchen. Chrome is running as the browser for 
+each terminal.
 
-    npm install -g grunt-cli
+The server requires just a machine that can run node.
 
-The www can then be built with:
+## Setting up a Server
 
-    grunt release
+To setup an ergosphere server, requires building a seperate node package with ergosphere-core as a dependency.
 
-This builds the www directory.
+An example project will be added to better document this.
+
+For the moment, this project can be used.
+
+Please pay attention to the file `config/ergosphere-configuration.json` for the required configuration.
+
+To start the server for development use:
+
+- `npm install`
+- `grunt run`
+
+To start the server in production (note SSL must be configured):
+
+- `node app.js startServer`
 
 
-## Making changes and running in Developer Mode
-
-During development a local web server can be run that automatically rebuilds the www folder when changes are made.
-
-To run this server use:
-
-    grunt run
-    
-# Dependencies and licences
-
-The project uses the following Javascript libraries:
 
 
-## jQuery
-
-This library is used to provide convenience functions and a framework for functions and re-use within our controls.
-
-Website: http://jquery.com
-
-Licence: MIT license
-
-## Moment JS
-
-This library is used for when manipulating times in JavaScript
-
-Website: http://momentjs.com
-
-Licence: MIT license
+  
