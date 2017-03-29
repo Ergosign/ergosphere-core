@@ -1,0 +1,3 @@
+**/persistentStore -diff
+design/* -diff
+*.zip -diff

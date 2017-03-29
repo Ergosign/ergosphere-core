@@ -1,0 +1,213 @@
+/*
+ * This file has been created by Ergosign GmbH - All rights reserved - http://www.ergosign.de
+ * DO NOT ALTER OR REMOVE THIS COPYRIGHT NOTICE OR THIS FILE HEADER.
+ *
+ * This file and the code contained in it are subject to the agreed contractual terms and conditions,
+ * in particular with regard to resale and publication.
+ */
+
+// Global settings
+@import "globals/globals";
+
+
+// Controls
+@import "controls/controls";
+
+
+
+html, body, .main, .column, .row {
+ height: 100%;
+}
+
+body {
+	overflow: hidden;
+
+	//Disable text selection globally
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+button, input, textarea {
+	outline: none;
+}
+
+* {
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+#screensaver {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #383a3c;
+	left: 0;
+	top: 0;
+	display: none;
+	z-index: 99999;
+
+	#logo-container {
+		position: fixed;
+		width: 500px;
+		padding-bottom: 500px;
+		margin:200px auto;
+	}
+
+	#logo-container div {
+		border-radius: 50%;
+		position: absolute;
+	}
+
+	.blend{
+		mix-blend-mode: multiply;
+		height: 79%;
+		width: 79%;
+	}
+
+	.bg-c,
+	.bg-m,
+	.bg-y {
+		margin: 10.5%;
+	}
+	.bg-c-border,
+	.bg-m-border,
+	.bg-y-border {
+		margin: 7.5%;
+	}
+
+	.bg-m {
+		background-color: #d6007f;
+
+	}
+	.bg-m-border {
+		border:2rem solid #d6007f;
+		width: 77%;
+		height: 77%;
+	}
+
+	.bg-y {
+		background-color: #ffde1d;
+
+	}
+	.bg-y-border {
+		border:2rem solid #ffde1d;
+		width: 77%;
+		height: 77%;
+	}
+
+	.bg-c {
+		background-color: #009de0;
+
+	}
+	.bg-c-border {
+		border:2rem solid #009de0;
+		width: 77%;
+		height: 77%;
+	}
+
+
+	.blend-fix {
+		width: 100%;
+		height: 100%;
+	}
+	.blend-fix > .bg-c,
+	.blend-fix > .bg-m,
+	.blend-fix > .bg-y {
+		background-color: white;
+		mix-blend-mode: normal;
+	}
+	.blend-fix > .bg-c-border,
+	.blend-fix > .bg-m-border,
+	.blend-fix > .bg-y-border {
+		border-color: white;
+		mix-blend-mode: normal;
+	}
+
+
+
+	.logo-text {
+		height: 99%;
+		width: 102%;
+		background: url(../img/screensaver_logo.svg) center no-repeat;
+		background-size: 55%;
+	}
+
+	/* ANIMATION */
+
+	#logo-container .bg-c {
+		-webkit-animation: animation-1-frames ease-in-out 3.4s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-transform-origin: 50% 50%;
+	}
+
+
+	#logo-container .bg-m {
+		-webkit-animation: animation-2-frames ease-in-out  4.2s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-transform-origin: 50% 50%;
+	}
+
+	#logo-container .bg-y {
+		-webkit-animation: animation-3-frames ease-in-out  4.8s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-transform-origin: 50% 50%;
+	}
+	#logo-container .bg-c-border {
+		-webkit-animation: animation-3-frames ease-in-out  4.3s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-transform-origin: 50% 50%;
+	}
+	#logo-container .bg-m-border {
+		-webkit-animation: animation-1-frames ease-in-out  3.9s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-transform-origin: 50% 50%;
+	}
+
+	#logo-container .bg-y-border {
+		-webkit-animation: animation-2-frames ease-in-out  4.7s ;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-transform-origin: 50% 50%;
+	}
+
+
+
+	#logo-container .bg-c,
+	#logo-container .bg-m,
+	#logo-container .bg-y,
+	#logo-container .bg-c-border,
+	#logo-container .bg-m-border,
+	#logo-container .bg-y-border {
+		-webkit-animation-play-state: running;
+	}
+
+	@-webkit-keyframes animation-1-frames {
+		0% {      -webkit-transform: rotate(0) translate(5%,7%)  scaleX(1.00) scaleY(1.00);         opacity: 1; }
+		50% {     -webkit-transform: rotate(98deg) translate(10%,-7%)    scaleX(1.10) scaleY(1.10); }
+		100% {      -webkit-transform: rotate(0) translate(5%,7%)  scaleX(1.00) scaleY(1.00);         opacity: 1; }
+	}
+
+	@-webkit-keyframes animation-2-frames {
+		0% {      -webkit-transform: rotate(0deg)  translate(3%,-10%)  scaleX(1.00) scaleY(1.00);    opacity: 1;}
+		33% {     -webkit-transform: rotate(40deg)  translate(10%,7%)    scaleX(1.10) scaleY(1.10); }
+		66% {     -webkit-transform: rotate(80deg)  translate(-10%,-7%)    scaleX(1.10) scaleY(1.10); }
+		100% {      -webkit-transform: rotate(0deg)  translate(3%,-10%)  scaleX(1.00) scaleY(1.00);    opacity: 1;}
+	}
+
+	@-webkit-keyframes animation-3-frames {
+		0% {      -webkit-transform: rotate(0deg)  translate(-8%,3%)  scaleX(1.00) scaleY(1.00);    opacity: 1;}
+		33% {     -webkit-transform: rotate(70deg)  translate(-7%,13%)    scaleX(1.10) scaleY(1.10); }
+		66% {     -webkit-transform: rotate(30deg)  translate(7%,5%)    scaleX(1.1) scaleY(1.1); }
+		100% {      -webkit-transform: rotate(0deg)  translate(-8%,3%)  scaleX(1.00) scaleY(1.00);    opacity: 1;}
+	}
+}
+
+// Placeholder
+
+#magenta {
+  background: $es-magenta;
+}

@@ -1,0 +1,56 @@
+{
+    "cities": [
+        {
+            "code": "B",
+            "title": "Berlin",
+            "yahooWeatherId":638242,
+            "yahooWeatherRegionCode":"BE",
+            "people": [
+                {
+                    "name": "Any Example ",
+                    "twitter": "anyExample"
+                }
+            ]
+        },
+        {
+            "code": "SB",
+            "title": "Saarbrücken",
+            "yahooWeatherId":690631,
+            "yahooWeatherRegionCode":"SL",
+            "people": [
+                {
+                    "name": "Al Briggs",
+                    "lastfm": "grouhcal",
+                    "twitter": "grouchal"
+                }
+            ]
+        },
+        {
+            "code": "HH",
+            "title": "Hamburg",
+            "yahooWeatherId":656958,
+            "yahooWeatherRegionCode":"HH",
+            "people": [
+
+            ]
+        },
+        {
+            "code": "M",
+            "title": "München",
+            "yahooWeatherId":676757,
+            "yahooWeatherRegionCode":"BY",
+            "people": [
+
+            ]
+        },
+        {
+            "code": "ZH",
+            "title": "Zurich",
+            "yahooWeatherId":784794,
+            "yahooWeatherRegionCode":"ZH",
+            "people": [
+
+            ]
+        }
+    ]
+}

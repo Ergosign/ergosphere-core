@@ -1,0 +1,19 @@
+{
+  "city_data_path": "config/city-list.json",
+  "weather_mappings_path": "config/weather-mappings.json",
+  "spotify_config": {
+    "clientId": "",
+    "clientSecret": "",
+    "redirectUri": ""
+  },
+  "lastfm_config": {
+    "api_key": "",
+    "secret": ""
+  },
+  "twitter_config": {
+    "consumer_key": "",
+    "consumer_secret": "",
+    "access_token_key": "",
+    "access_token_secret": ""
+  }
+}

@@ -1,0 +1,49 @@
+/*
+ * This file has been created by Ergosign GmbH - All rights reserved - http://www.ergosign.de
+ *
+ *
+ * This file and the code contained in it are subject to the agreed contractual terms and conditions,
+ * in particular with regard to resale and publication.
+ */
+
+/*
+Colors
+
+Markup: colors.hbs
+
+Weight: -30
+
+Styleguide Colors
+*/
+
+$white:         rgba(255,255,255,1);
+$black:			#03030d;
+$es-black:      #383a3c;
+$es-black-60:   #878787;
+$es-black-40:   #b2b2b2;
+$es-black-20:   #dadada;
+$es-cyan:       #009de0;
+$cyan-dark:     #06718e;
+$es-magenta:    rgba(214,0,127,1);
+$pink:          #d6007f;
+$pink-dark:     #840b56;
+$darkblue:      #040470;
+$darkblue-dark: #6f6fb2;
+$darkgreen:     #028919;
+$darkgreen-dark:#54c664;
+$yellow:        #ffde1d;
+$yellow-dark:   #fcb21f;
+
+$color-white: 					#ffffff;
+$color-black:                   #000000;
+$color-grey:                    #f4f4f4;
+$color-greydark:                #e5e5e5;
+$color-red:                     #a80000;
+
+
+.color-white 					{ background-color: $color-white; }
+.color-black 					{ background-color: $color-black; }
+.color-red   					{ background-color: $color-red; }
+.color-grey  					{ background-color: $color-grey; }
+.color-greydark				    { background-color: $color-greydark; }
+

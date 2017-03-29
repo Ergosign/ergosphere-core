@@ -1,0 +1,51 @@
+<div class="city-module city_{{code}}" id="city_{{code}}" data-city-code="{{code}}">
+    <img src="img/resp-images/weather/city/{{code}}/sunny-shrunk.jpg"/>
+    <div class="city-title city-module__city-title">{{title}}</div>
+    <div class="city-degree city-module__city-degree weather"></div>
+    <div class="main-graphic city-module__main-graphic">
+        <div class="city-module__animation">
+            <div class="city-module__animation-1"></div>
+            <div class="city-module__animation-2"></div>
+            <div class="city-module__animation-3"></div>
+        </div>
+        <div class="city-module__icons">
+
+            <div class="city-module__twitter city-module__button">
+                <i class="fa fa-twitter fa-2x"></i>
+                <div class="city-module__counter">0</div>
+            </div>
+            <div class="city-module__twitter-line"></div>
+
+            <div class="city-module__lastfm city-module__button">
+                <i class="fa fa-headphones fa-2x"></i>
+            </div>
+            <div class="city-module__lastfm-line"></div>
+
+            <div class="city-module__jabber city-module__button">
+                <i class="fa fa-comment fa-2x"></i>
+                <div class="city-module__counter-badge badge">0</div>
+            </div>
+            <div class="city-module__jabber-line"></div>
+
+            <div class="coffee-counter city-module__coffee-counter city-module__button">
+                <div class="city-module__counter">0</div>
+            </div>
+            <div class="city-module__coffee-line"></div>
+
+            <div class="city-module__icons-toggle">
+                <div class="city-module__icons-toggle-item active">HQ</div>
+                <div class="city-module__icons-toggle-item">QBUS0</div>
+                <div class="city-module__icons-toggle-item">QBUS1</div>
+            </div>
+
+        </div>
+		<div class="city-module__audio" data-city-code="{{code}}"><i class="fa fa-microphone"></i></div>
+        <div class="city-module__camera">
+            <img />
+        </div>
+		<div class="city-module__jabber-bubble">
+			<div class="user-image"><img src="" /></div>
+        </div>
+    </div>
+    {{> city-detail this }}
+</div>

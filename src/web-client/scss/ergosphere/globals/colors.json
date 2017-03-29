@@ -1,0 +1,17 @@
+[
+  {
+    "colorName": "White",
+    "colorCSSClass":"white",
+    "text": "White should be used in ..."
+  },
+  {
+    "colorName": "Black",
+    "colorCSSClass":"black",
+    "text": "Black should be used in ..."
+  },
+  {
+    "colorName": "ES-Black",
+    "colorCSSClass":"es-black",
+    "text": "TODO: Add more colors"
+  }
+]

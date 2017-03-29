@@ -1,0 +1,50 @@
+/*
+ * This file has been created by Ergosign GmbH - All rights reserved - http://www.ergosign.de
+ * DO NOT ALTER OR REMOVE THIS COPYRIGHT NOTICE OR THIS FILE HEADER.
+ *
+ * This file and the code contained in it are subject to the agreed contractual terms and conditions,
+ * in particular with regard to resale and publication.
+ */
+
+@import url(//fonts.googleapis.com/css?family=Slabo+27px|Roboto);
+
+* {
+  font-family: 'Roboto', 'Slabo 27px', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 120%;
+}
+.typo-city-title {
+  font-size: 40px;
+  color: $white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,.4);
+}
+
+.typo-city-degree {
+  font-size: 30px;
+  color: $white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,.4);
+}
+
+.typo-body {
+  font-size: 15px;
+  color: $es-black;
+}
+
+.typo-body-s {
+  font-size: 10px;
+  margin-top: 4px;
+  color: $es-black;
+
+}
+
+.typo-city-detail-header {
+  font-size: 16px;
+  font-weight: normal;
+  color: $es-black-60;
+}
+
+
+.typo-icon-counter {
+  font-size: 13px;
+}

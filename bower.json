@@ -1,0 +1,28 @@
+{
+  "name": "ergosphere-new",
+  "private": "true",
+  "dependencies": {
+    "jquery": "2.1.4",
+    "bootstrap-sass": "3.3.6",
+    "moment": "2.18.1",
+    "Recorderjs":"08e7abd997",
+    "resemblejs" : "2.2.2"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/javascripts/dropdown.js",
+        "assets/javascripts/modal.js"
+      ]
+    }
+  },
+  "preen": {
+    "jquery": [
+      "dist/*.js"
+    ],
+    "bootstrap-sass": [
+      "assets/javascripts/dropdown.js",
+      "assets/javascripts/modal.js"
+    ]
+  }
+}

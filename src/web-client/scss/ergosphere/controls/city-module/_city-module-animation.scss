@@ -1,0 +1,113 @@
+/*
+ * This file has been created by Ergosign GmbH - All rights reserved - http://www.ergosign.de
+ * DO NOT ALTER OR REMOVE THIS COPYRIGHT NOTICE OR THIS FILE HEADER.
+ *
+ * This file and the code contained in it are subject to the agreed contractual terms and conditions,
+ * in particular with regard to resale and publication.
+ */
+
+
+
+// ANIMATION
+.city-module {
+    &__animation{
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        top: 50%;
+        //    opacity: .5;
+        left: 50%;
+		pointer-events: none;
+    }
+
+    &__animation-1,
+    &__animation-2,
+    &__animation-3 {
+        position: absolute;
+        border: 8px solid;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        left: -50%;
+        mix-blend-mode: multiply;
+        z-index: 10;
+        opacity: 0;
+    }
+
+
+
+
+    &__animation-1 {
+        margin: auto;
+    }
+
+    &__animation-2 {
+    }
+
+    &__animation-3 {
+    }
+}
+
+.city-module__animation.animate .city-module__animation-1{
+    -webkit-animation: animation-1-frames ease-in-out .9s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.city-module__animation.animate .city-module__animation-2{
+    -webkit-animation: animation-2-frames ease-in-out .8s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.city-module__animation.animate .city-module__animation-3{
+    -webkit-animation: animation-3-frames ease-in-out .6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes animation-3-frames {
+    0% {      -webkit-transform: rotate(0deg)  translate(0%,0%)  scaleX(1.00) scaleY(1.00);    opacity: 1;}
+    21% {     -webkit-transform: rotate(30deg)  translate(7%,5%)    scaleX(5) scaleY(5); opacity: 0;}
+    50% {     -webkit-transform: rotate(00deg)  translate(-12%,-13%)    scaleX(1.2) scaleY(1.2); }
+    76% {      -webkit-transform: rotate(20deg)  translate(-7%,7%)  scaleX(1) scaleY(1);    }
+    100% {      -webkit-transform: rotate(0deg)  translate(0%,0%)  scaleX(1.00) scaleY(1.00);    opacity: 1;}
+}
+
+
+
+@-webkit-keyframes animation-2-frames {
+    0% {      -webkit-transform: rotate(0deg)  translate(0%,0%)  scaleX(1.00) scaleY(1.00);    opacity: 1;}
+    20% {     -webkit-transform: rotate(40deg)  translate(10%,7%)    scaleX(1.10) scaleY(1.10); }
+    52% {     -webkit-transform: rotate(20deg)  translate(-10%,-7%)    scaleX(1.40) scaleY(1.40); }
+    90% {      -webkit-transform: rotate(0deg)  translate(3%,-10%)  scaleX(1.00) scaleY(1.00);    }
+    100% {      -webkit-transform: rotate(0deg)  translate(0%,0%)  scaleX(1.00) scaleY(1.00);    opacity: 1;}
+}
+
+/*
+@keyframes animation-2-frames{
+  0% {transform:  scaleX(1.00) scaleY(1.00) ;}
+}
+
+@-moz-keyframes animation-2-frames{
+  0% {-moz-transform:  scaleX(1.00) scaleY(1.00) ;}
+ }
+
+@-o-keyframes animation-2-frames {
+  0% {-o-transform:  scaleX(1.00) scaleY(1.00) ;}
+}
+@-ms-keyframes animation-2-frames {
+  100% {-ms-transform:  scaleX(1.00) scaleY(1.00) ; }
+}
+*/
+
+
+
+@-webkit-keyframes animation-1-frames {
+    0% {    -webkit-transform: rotate(0)      translate(0%,0%)      scaleX(1.00) scaleY(1.00);  opacity: 1; }
+    23% {   -webkit-transform: rotate(10deg)  translate(-5%,-7%)    scaleX(1) scaleY(1); }
+    36% {   -webkit-transform: rotate(25deg)  translate(12%,2%)    scaleX(1.20) scaleY(1.20); }
+    82% {   -webkit-transform: rotate(18deg)  translate(-10%,10%)    scaleX(1.10) scaleY(1.10); }
+    100% {  -webkit-transform: rotate(0)      translate(0%,0%)      scaleX(1.00) scaleY(1.00);  opacity: 1; }
+
+}

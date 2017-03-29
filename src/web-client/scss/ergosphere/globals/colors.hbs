@@ -1,0 +1,11 @@
+
+<p>Please Note The HTML in this section is purely for the Style Guide and colors should not be referenced diretly from HTML under normal usage.</p>
+<div class="docu-color-list">
+    {{#each colours~}}
+        <div class="docu-color-row">
+            <div class="docu-color {{colorCSSClass}}"></div>
+            <div class="docu-color-name {{colorName}}"></div>
+            {{#if text}}<div class="docu-color-text {{text}}"></div>{{/if~}}
+        </div>
+    {{~/each}}
+</div>
